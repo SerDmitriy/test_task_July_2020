@@ -3,7 +3,11 @@ import dataJSON from './data.json';
 import { useTestStyles } from './test-styles';
 import { Folder } from './subcomponents/folder';
 
-export const FolderTree = props => {
+interface IProps {
+  expandedFolders: string[];
+}
+
+export const FolderTree: React.FC<IProps> = props => {
   const { expandedFolders } = props;
   const classes = useTestStyles();
 

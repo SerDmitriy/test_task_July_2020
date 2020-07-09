@@ -1,9 +1,15 @@
+import React from 'react';
 import { useTestStyles } from '../test-styles';
 import classNames from 'classnames';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
-import React from 'react';
 
-export const File = ({ name, mime, isOpen }) => {
+interface IProps {
+  name: string;
+  mime?: string;
+  isOpen: boolean;
+}
+
+export const File: React.FC<IProps> = ({ name, mime, isOpen }) => {
   const classes = useTestStyles();
 
   return (
