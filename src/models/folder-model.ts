@@ -9,7 +9,7 @@ export interface IBaseSystem {
 }
 
 export interface IFolder extends IBaseSystem {
-  children?: any[];
+  children?: IFolder[];
 }
 
 export interface IExtendedSystem extends IFolder {
