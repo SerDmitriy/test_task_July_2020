@@ -7,7 +7,7 @@ interface IProps {
   expandedFolders: string[];
 }
 
-export const FolderTree: React.FC<IProps> = props => {
+const FolderTree: React.FC<IProps> = props => {
   const { expandedFolders } = props;
   const classes = useTestStyles();
 
@@ -23,3 +23,5 @@ export const FolderTree: React.FC<IProps> = props => {
     </>
   );
 };
+
+export default FolderTree;
